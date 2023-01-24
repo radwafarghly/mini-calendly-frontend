@@ -24,7 +24,7 @@ Required to build Mini Calendly Clone
 npm install
 ```
 
-To run
+- To run
 
 ```bash
 npm run dev
