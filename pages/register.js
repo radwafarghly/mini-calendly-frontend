@@ -17,7 +17,7 @@ export default function Register() {
     const [user_name, setUserName] = useState('')
     const [errors, setErrors] = useState([])
 
-
+   // register new user
     const submitForm = async event => {
         event.preventDefault()
 
@@ -31,10 +31,9 @@ export default function Register() {
                     withCredentials: true
                 }
             );
-            // console.log(JSON.stringify(response?.data));
             console.log(JSON.stringify(response));
             localStorage.setItem('user', JSON.stringify(response.data.data));
-            localStorage.setItem('access_token', JSON.stringify(response.data.access_token));
+            localStorage.setItem('access_token', response.data.access_token);
             localStorage.setItem('userId', JSON.stringify(response.data.data.id));
 
             router.push('/')

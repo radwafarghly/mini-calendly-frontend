@@ -49,7 +49,7 @@ export default function Card({days = [],schedule ,onDeleteDay}) {
                     </div>
                 </div>
             
-            
+               {/* Show Update Model  */} 
                 <UpdateDayModal  showUpdate={showUpdate} onToggleModal={hiddenModel} schedule={schedule} day={selectDay}/> 
                 
                 

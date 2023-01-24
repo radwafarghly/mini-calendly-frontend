@@ -25,14 +25,20 @@ function MobileNav({open, setOpen}) {
                 
                 { access_token ?
                 <>
-                    <a className="text-xl font-normal my-4" href="#" onClick={logout}>
-                       Logout
-                    </a>
+                        {/* <a className="text-xl font-normal my-4" href="/schedule">
+                           Schedules
+                        </a>
+                        <a className="text-xl font-normal my-4" href="/event">
+                           Events
+                        </a> */}
+                        <a className="text-xl font-normal my-4" href="#" onClick={logout}>
+                          Logout
+                        </a>
                 </>
                 :
                 <>
                     <a className="text-xl font-normal my-4" href="/login" onClick={() => setTimeout(() => {setOpen(!open)}, 100)}>
-                    Login
+                       Login
                     </a> 
                     <a className="text-xl font-normal my-4" href="/register" onClick={() => setTimeout(() => {setOpen(!open)}, 100)}>
                         Register
@@ -60,12 +66,12 @@ const logout = async () => {
     localStorage.clear();
     location.reload()
 } 
-// const  access_token = localStorage.getItem('access_token') ? localStorage.getItem('access_token') : null;
 
 
 export default function Navbar() {
     
     const [open, setOpen] = useState(false)
+    //get access_token from localStorage
     const [access_token , setUser]= useState(
         typeof window !== "undefined" ? localStorage.getItem('access_token') : null
       );     

@@ -15,6 +15,7 @@ import AddEventModal from '../components/addEventModal'
 
 export default function Event() {
     const router = useRouter()
+
     const [events, setEvents] = useState([])
     const [errors, setErrors] = useState([])
     const [schedules, setSchedules] = useState([])
@@ -76,7 +77,7 @@ export default function Event() {
         getEvent()
         getSchedules()
     },[]) 
-
+    // fun open & close model 
     function toggleModal() {
         document.getElementById('modal').classList.toggle('hidden')
     }

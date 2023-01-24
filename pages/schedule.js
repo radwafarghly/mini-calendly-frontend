@@ -141,11 +141,11 @@ export default function Schedule() {
         getSchedules()
         getDays()
     },[reGetSchedules]) 
-
+   // to open & close model od add
     function toggleModal() {
         document.getElementById('modal').classList.toggle('hidden')
     }
-    
+     // to open & close model od update
     function toggleAddModal(schedule) {
         SetSelectSchedule(schedule)
         SetShowAddModal(true)

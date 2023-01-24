@@ -15,7 +15,7 @@ export default function AddDayModal({days,onToggleModal,schedule}) {
     const [time_from,setTimeFrom] = useState('')
     const [time_to,setTimeTo] = useState('')
     const [errors, setErrors] = useState([])
-    const [day_id, setDay] = useState('')
+    const [day_id, setDay] = useState('1')
     // assgin day to Schedule
     const submitForm = async event => {
         event.preventDefault()

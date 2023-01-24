@@ -20,7 +20,7 @@ export default function AddEventModal({onToggleModal,schedules}) {
         typeof window !== "undefined" ? localStorage.getItem('userId') : null
       );  
     const [errors, setErrors] = useState([])
-    // save the Schedule
+    // save the New Event
     const submitForm = async event => {
         event.preventDefault()
         const user_id = localStorage.getItem('userId')
