@@ -18,7 +18,7 @@ Required to build Mini Calendly Clone
 ## Installation
 -   git clone **(https://github.com/radwafarghly/mini-calendly-frontend)**
 
-Use the package manager to inistall all packages
+- Use the package manager to inistall all packages
 
 ```bash
 npm install
@@ -29,3 +29,6 @@ To run
 ```bash
 npm run dev
 ```
+-   copy this link **(http://127.0.0.1:3000)**
+-   open it in browser
+
